@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='pt'>
+  <head>
+    <title>TEKHNE</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap" >
+    <link rel="stylesheet" href="application.css">
+    <script src="https://kit.fontawesome.com/6e5088f8af.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+    <main>
+      <div class="Logo">
+        <img src="small.jpeg" alt="Logo do Chatbot">
+      </div>
+
+      <h1 class="Chatbot-name">TEKHNE</h1>
+      <h2 class="headline">O Melhor Chat bot do mundo</h2>
+
+      <p>O Nosso Chat bot... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <hr>
+
+      <div style="margin-top: 15px" class="led">
+  <div class="cores">
+    <div>
+      <input type="radio" id="red" name="red" value="red" checked onClick="onRadioPress(this)">
+      <label for="red">Vermelho</label><br>
+    </div>
+    <div>
+      <input type="radio" id="green" name="green" value="green" onClick="onRadioPress(this)">
+      <label for="green">Verde</label><br>
+    </div>
+    <div>
+      <input type="radio" id="blue" name="blue" value="blue" onClick="onRadioPress(this)">
+      <label for="blue">Azul</label>
+    </div>
+  </div>
+  <div class="pernas">
+    <div class="perna"></div>
+    <div class="perna curta"></div>
+  </div>
+</div>
+
+<script>
+function onRadioPress(event) {
+  const radioClicado = event;
+  const cabecaLed = document.getElementById("carid");
+  const radioVermelho = document.getElementById("red");
+  const radioVerde = document.getElementById("green");
+  const radioAzul = document.getElementById("blue");
+  switch(radioClicado.id) {
+    case "red":
+      cabecaLed.className = "fas fa-car red red-light";
+      radioVerde.checked = false;
+      radioAzul.checked = false;
+      break;
+    case "green":
+      cabecaLed.className = "fas fa-car green green-light";
+      radioVermelho.checked = false;
+      radioAzul.checked = false;
+      break;
+    case "blue":
+      cabecaLed.className = "fas fa-car blue blue-light";
+      radioVermelho.checked = false;
+      radioVerde.checked = false;
+      break;
+  }
+}
+</script>
+
+      <div class="Funcoes">
+        <h2>Funcões</h2>
+
+
+        <table>
+          <thead>
+            <tr>
+              <th>Função</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Ligar Carro</td>
+              <td>
+                <i class="fas fa-car" id="carid"></i>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </body>
+</html>
