@@ -12,7 +12,7 @@
   <body>
     <main>
       <div class="Logo">
-        <img src="small.jpeg" alt="Logo do Chatbot">
+        <img src="logo.png" alt="Logo do Chatbot"
       </div>
 
       <h1 class="Chatbot-name">TEKHNE</h1>
@@ -68,6 +68,20 @@ function onRadioPress(event) {
       break;
   }
 }
+</script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "42de1aff-b160-46b3-8993-7c87b76fd4d6", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "8704849c-dc6d-4a02-9b68-50541f2c2f8d", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
 </script>
 
       <div class="Funcoes">
