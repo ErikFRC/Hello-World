@@ -22,6 +22,21 @@ main{
   margin: 0;
 }
 
+.fiap{
+  width: 75px;
+  padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.ford{
+  padding-top: 30px;
+}
+
+.fordlogo{
+  width: 150px;
+
+}
+
 .font{
   font-size: 20px;
 }
