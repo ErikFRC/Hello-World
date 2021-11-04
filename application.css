@@ -16,9 +16,19 @@ main{
   border-radius: 10px;
 }
 
-.Logo, .Chatbot-name, .headline{
+.Chatbot-name, .headline{
+  font-size: 30px;
   text-align: center;
   margin: 0;
+}
+
+.font{
+  font-size: 20px;
+}
+
+.Logo{
+  text-align: center;
+  margin: auto;
 }
 
 .Funcoes {
