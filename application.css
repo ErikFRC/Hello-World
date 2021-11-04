@@ -6,7 +6,7 @@ body{
 
   font-family: 'Anton';
   line-height: 1.5;
-  color: white;
+  color: #003786;
 }
 
 main{
@@ -34,6 +34,24 @@ main{
     margin: 0 auto;
 }
 
+.some-class {
+      float: left;
+      clear: none;
+    }
+
+    label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 1em 0px 8px;
+    }
+
+input[type=radio],
+    input.radio {
+      float: left;
+      clear: none;
+      margin: 2px 0 0 2px;
+    }
 
 .red-light {
   width: 0px;
@@ -44,9 +62,4 @@ main{
   width: 0px;
   height: 0px;
   box-shadow: 8px 7px 9px 9px rgb(0,255,0);
-}
-.blue-light {
-  width: 0px;
-  height: 0px;
-  box-shadow: 8px 7px 9px 9px rgb(0,0,255);
 }
